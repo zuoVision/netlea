@@ -31,7 +31,7 @@ The integration does not require a fixed Bluetooth MAC address. It looks up the 
 
 ## HACS
 
-This repository is not currently published in the default HACS store. After this project is published on GitHub, it can be added in HACS as a **custom repository** with category **Integration**. The repository must retain the `custom_components/netlea_filter/` directory structure.
+This integration is not listed in the default HACS store. Add `https://github.com/zuoVision/netlea` in HACS as a **custom repository** with category **Integration**. The repository uses the `custom_components/netlea_filter/` directory structure.
 
 ## Safety and support
 
