@@ -1,0 +1,13 @@
+DOMAIN = "netlea_filter"
+# Do not pin a Bluetooth address: it is device-specific and can change.
+DEFAULT_ADDRESS = None
+DEFAULT_NAME = "NL NO.2S-G1"
+
+SERVICE_UUID = "0003cbbb-0000-1000-8000-00805f9bfff0"
+CONTROL_UUID = "0003cbbb-0000-1000-8000-00805f9beee1"
+STATUS_UUID = "0003cbbb-0000-1000-8000-00805f9beee4"
+CONTROL_MODE_UUID = "0003cbbb-0000-1000-8000-00805f9beee5"
+INIT_UUID = "0003cbbb-0000-1000-8000-00805f9beeef"
+TRIPS_UUID = "0003cbbb-0000-1000-8000-00805f9beee2"
+
+CONF_BLE_NAME = "ble_name"

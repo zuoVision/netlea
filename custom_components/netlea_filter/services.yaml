@@ -1,0 +1,45 @@
+set_schedule:
+  name: 设置每日行程
+  description: 将最多 10 段每日重复行程写入滤桶。
+  fields:
+    trips:
+      name: 行程列表
+      description: 每段包含 start、end、gear，可选 mode（1 恒流、2 造浪、3 喂鱼）。
+      required: true
+      example:
+        - start: "08:00"
+          end: "12:00"
+          gear: 5
+          mode: 1
+        - start: "12:00"
+          end: "22:00"
+          gear: 8
+          mode: 1
+
+clear_schedule:
+  name: 清空每日行程
+  description: 清除滤桶内全部行程并返回手动控制。
+
+disable_schedule:
+  name: 暂停每日行程
+  description: 关闭行程执行并切换到手动控制，但保留全部时间和档位设置。
+
+enable_schedule:
+  name: 启用已有行程
+  description: 重新启用滤桶内已经保存的每日行程设置。
+
+pause_feeding:
+  name: 暂停喂食
+  description: 临时停泵并保留原模式和行程设置。
+
+resume_feeding:
+  name: 结束喂食暂停
+  description: 恢复暂停前的模式；行程模式继续执行当前时段的行程。
+
+turn_on:
+  name: 启动滤桶
+  description: 启动滤桶并使用当前档位；若行程正在运行，会暂停行程并切换为手动控制。
+
+turn_off:
+  name: 关闭滤桶
+  description: 关闭滤桶；若行程正在运行，会暂停行程并切换为手动控制。

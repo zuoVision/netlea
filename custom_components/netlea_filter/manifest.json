@@ -1,0 +1,16 @@
+{
+  "domain": "netlea_filter",
+  "name": "Netlea Bluetooth Filter",
+  "version": "0.1.0",
+  "config_flow": true,
+  "iot_class": "local_polling",
+  "bluetooth": [
+    {
+      "local_name": "NL NO.2S-G1"
+    }
+  ],
+  "requirements": [],
+  "dependencies": [
+    "bluetooth"
+  ]
+}
